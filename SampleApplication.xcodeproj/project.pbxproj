@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		1683785EF62A0EED942BE16B /* libPods-SampleApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC73815B4B3575B5B4DEC76 /* libPods-SampleApplication.a */; };
 		5EB0522E21CB126F100A5700 /* libPods-SampleApplicationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3952CC0F3C8133C7B2C30FFB /* libPods-SampleApplicationTests.a */; };
+		E56998CB1FBA580C00FB2BCF /* SAMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E56998CA1FBA580C00FB2BCF /* SAMainView.m */; };
 		E583688A1FBA549000B2B29A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E58368891FBA549000B2B29A /* AppDelegate.m */; };
-		E583688D1FBA549000B2B29A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E583688C1FBA549000B2B29A /* ViewController.m */; };
+		E583688D1FBA549000B2B29A /* SAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E583688C1FBA549000B2B29A /* SAMainViewController.m */; };
 		E58368901FBA549000B2B29A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E583688E1FBA549000B2B29A /* Main.storyboard */; };
 		E58368921FBA549000B2B29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58368911FBA549000B2B29A /* Assets.xcassets */; };
 		E58368951FBA549000B2B29A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58368931FBA549000B2B29A /* LaunchScreen.storyboard */; };
@@ -35,11 +36,13 @@
 		6CC73815B4B3575B5B4DEC76 /* libPods-SampleApplication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApplication.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCD8D34057ACC3B32D30C3C /* Pods-SampleApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleApplicationTests/Pods-SampleApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		780F760CB8928653F9719EA5 /* Pods-SampleApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleApplication/Pods-SampleApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		E56998C91FBA580C00FB2BCF /* SAMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMainView.h; sourceTree = "<group>"; };
+		E56998CA1FBA580C00FB2BCF /* SAMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMainView.m; sourceTree = "<group>"; };
 		E58368851FBA549000B2B29A /* SampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58368881FBA549000B2B29A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E58368891FBA549000B2B29A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E583688B1FBA549000B2B29A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E583688C1FBA549000B2B29A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E583688B1FBA549000B2B29A /* SAMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMainViewController.h; sourceTree = "<group>"; };
+		E583688C1FBA549000B2B29A /* SAMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMainViewController.m; sourceTree = "<group>"; };
 		E583688F1FBA549000B2B29A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E58368911FBA549000B2B29A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E58368941FBA549000B2B29A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +73,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E56998C31FBA56D500FB2BCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E56998C91FBA580C00FB2BCF /* SAMainView.h */,
+				E56998CA1FBA580C00FB2BCF /* SAMainView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E56998C41FBA56DC00FB2BCF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E583688B1FBA549000B2B29A /* SAMainViewController.h */,
+				E583688C1FBA549000B2B29A /* SAMainViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E56998C51FBA56E700FB2BCF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E56998C61FBA56EE00FB2BCF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E56998C71FBA56F800FB2BCF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E58368931FBA549000B2B29A /* LaunchScreen.storyboard */,
+				E583688E1FBA549000B2B29A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E56998C81FBA570000FB2BCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E58368881FBA549000B2B29A /* AppDelegate.h */,
+				E58368891FBA549000B2B29A /* AppDelegate.m */,
+				E58368911FBA549000B2B29A /* Assets.xcassets */,
+				E58368971FBA549000B2B29A /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E583687C1FBA549000B2B29A = {
 			isa = PBXGroup;
 			children = (
@@ -93,15 +148,13 @@
 		E58368871FBA549000B2B29A /* SampleApplication */ = {
 			isa = PBXGroup;
 			children = (
-				E58368881FBA549000B2B29A /* AppDelegate.h */,
-				E58368891FBA549000B2B29A /* AppDelegate.m */,
-				E583688B1FBA549000B2B29A /* ViewController.h */,
-				E583688C1FBA549000B2B29A /* ViewController.m */,
-				E583688E1FBA549000B2B29A /* Main.storyboard */,
-				E58368911FBA549000B2B29A /* Assets.xcassets */,
-				E58368931FBA549000B2B29A /* LaunchScreen.storyboard */,
+				E56998C51FBA56E700FB2BCF /* Helpers */,
+				E56998C61FBA56EE00FB2BCF /* Managers */,
+				E56998C71FBA56F800FB2BCF /* Storyboards */,
+				E56998C81FBA570000FB2BCF /* Supporting Files */,
+				E56998C41FBA56DC00FB2BCF /* View Controllers */,
+				E56998C31FBA56D500FB2BCF /* Views */,
 				E58368961FBA549000B2B29A /* Info.plist */,
-				E58368971FBA549000B2B29A /* main.m */,
 			);
 			path = SampleApplication;
 			sourceTree = "<group>";
@@ -342,9 +395,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E583688D1FBA549000B2B29A /* ViewController.m in Sources */,
+				E583688D1FBA549000B2B29A /* SAMainViewController.m in Sources */,
 				E58368981FBA549000B2B29A /* main.m in Sources */,
 				E583688A1FBA549000B2B29A /* AppDelegate.m in Sources */,
+				E56998CB1FBA580C00FB2BCF /* SAMainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -498,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9L6EH6384;
 				INFOPLIST_FILE = SampleApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.austinalbrecht.SampleApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9L6EH6384;
 				INFOPLIST_FILE = SampleApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.austinalbrecht.SampleApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
