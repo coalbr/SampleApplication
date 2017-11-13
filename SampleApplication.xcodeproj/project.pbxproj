@@ -17,6 +17,7 @@
 		E58368951FBA549000B2B29A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58368931FBA549000B2B29A /* LaunchScreen.storyboard */; };
 		E58368981FBA549000B2B29A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E58368971FBA549000B2B29A /* main.m */; };
 		E58368A21FBA549000B2B29A /* SampleApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E58368A11FBA549000B2B29A /* SampleApplicationTests.m */; };
+		E5E2B9DB1FBA5A32003F2C2A /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E2B9DA1FBA5A32003F2C2A /* UIColor+CustomColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E583689D1FBA549000B2B29A /* SampleApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58368A11FBA549000B2B29A /* SampleApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleApplicationTests.m; sourceTree = "<group>"; };
 		E58368A31FBA549000B2B29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E2B9D91FBA5A32003F2C2A /* UIColor+CustomColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		E5E2B9DA1FBA5A32003F2C2A /* UIColor+CustomColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 		E56998C51FBA56E700FB2BCF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E5E2B9D81FBA59F0003F2C2A /* Categories */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -166,6 +170,15 @@
 				E58368A31FBA549000B2B29A /* Info.plist */,
 			);
 			path = SampleApplicationTests;
+			sourceTree = "<group>";
+		};
+		E5E2B9D81FBA59F0003F2C2A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2B9D91FBA5A32003F2C2A /* UIColor+CustomColors.h */,
+				E5E2B9DA1FBA5A32003F2C2A /* UIColor+CustomColors.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		F35F91890CC7BDE374E18CEB /* Pods */ = {
@@ -397,6 +410,7 @@
 			files = (
 				E583688D1FBA549000B2B29A /* SAMainViewController.m in Sources */,
 				E58368981FBA549000B2B29A /* main.m in Sources */,
+				E5E2B9DB1FBA5A32003F2C2A /* UIColor+CustomColors.m in Sources */,
 				E583688A1FBA549000B2B29A /* AppDelegate.m in Sources */,
 				E56998CB1FBA580C00FB2BCF /* SAMainView.m in Sources */,
 			);
