@@ -8,14 +8,14 @@
 
 #import "SAMainView.h"
 
-@implementation SAMainView
+@interface SAMainView()
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+@property (nonatomic, weak) IBOutlet UIButton *beginTrialButton;
+@property (nonatomic, weak) IBOutlet UIButton *circleButton;
+@property (nonatomic, weak) IBOutlet UILabel *outputLabel;
+
+@end
+
+@implementation SAMainView
 
 @end

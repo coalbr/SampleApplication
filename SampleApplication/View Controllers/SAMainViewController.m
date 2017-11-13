@@ -26,4 +26,10 @@
     [super viewDidLoad];
 }
 
+#pragma mark - IBAction methods
+- (IBAction)onCircleButtonTouchUpInside:(UIButton *)sender
+{
+    
+}
+
 @end
