@@ -16,8 +16,9 @@
 		E58368921FBA549000B2B29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58368911FBA549000B2B29A /* Assets.xcassets */; };
 		E58368951FBA549000B2B29A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58368931FBA549000B2B29A /* LaunchScreen.storyboard */; };
 		E58368981FBA549000B2B29A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E58368971FBA549000B2B29A /* main.m */; };
-		E58368A21FBA549000B2B29A /* SampleApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E58368A11FBA549000B2B29A /* SampleApplicationTests.m */; };
 		E5E2B9DB1FBA5A32003F2C2A /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E2B9DA1FBA5A32003F2C2A /* UIColor+CustomColors.m */; };
+		E5E2B9E21FBA6F79003F2C2A /* SAMainViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E2B9E11FBA6F79003F2C2A /* SAMainViewControllerTests.m */; };
+		E5E2B9E41FBA6F86003F2C2A /* SAMainViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E2B9E31FBA6F86003F2C2A /* SAMainViewTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +51,11 @@
 		E58368961FBA549000B2B29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E58368971FBA549000B2B29A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E583689D1FBA549000B2B29A /* SampleApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E58368A11FBA549000B2B29A /* SampleApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleApplicationTests.m; sourceTree = "<group>"; };
 		E58368A31FBA549000B2B29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E2B9D91FBA5A32003F2C2A /* UIColor+CustomColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
 		E5E2B9DA1FBA5A32003F2C2A /* UIColor+CustomColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
+		E5E2B9E11FBA6F79003F2C2A /* SAMainViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMainViewControllerTests.m; sourceTree = "<group>"; };
+		E5E2B9E31FBA6F86003F2C2A /* SAMainViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMainViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +104,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		E56998C61FBA56EE00FB2BCF /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		E56998C71FBA56F800FB2BCF /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				E56998C51FBA56E700FB2BCF /* Helpers */,
-				E56998C61FBA56EE00FB2BCF /* Managers */,
 				E56998C71FBA56F800FB2BCF /* Storyboards */,
 				E56998C81FBA570000FB2BCF /* Supporting Files */,
 				E56998C41FBA56DC00FB2BCF /* View Controllers */,
@@ -166,7 +160,8 @@
 		E58368A01FBA549000B2B29A /* SampleApplicationTests */ = {
 			isa = PBXGroup;
 			children = (
-				E58368A11FBA549000B2B29A /* SampleApplicationTests.m */,
+				E5E2B9DF1FBA6F4D003F2C2A /* View Controllers */,
+				E5E2B9E01FBA6F56003F2C2A /* Views */,
 				E58368A31FBA549000B2B29A /* Info.plist */,
 			);
 			path = SampleApplicationTests;
@@ -179,6 +174,22 @@
 				E5E2B9DA1FBA5A32003F2C2A /* UIColor+CustomColors.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		E5E2B9DF1FBA6F4D003F2C2A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2B9E11FBA6F79003F2C2A /* SAMainViewControllerTests.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E5E2B9E01FBA6F56003F2C2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2B9E31FBA6F86003F2C2A /* SAMainViewTests.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F35F91890CC7BDE374E18CEB /* Pods */ = {
@@ -420,7 +431,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E58368A21FBA549000B2B29A /* SampleApplicationTests.m in Sources */,
+				E5E2B9E21FBA6F79003F2C2A /* SAMainViewControllerTests.m in Sources */,
+				E5E2B9E41FBA6F86003F2C2A /* SAMainViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

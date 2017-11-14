@@ -10,4 +10,11 @@
 
 @interface SAMainView : UIView
 
+@property (nonatomic, readonly) BOOL isValidToPress;
+
+- (void)addLongPressGestureToTarget:(nullable id)target action:(nullable SEL)action;
+- (void)updateForCircleTouched;
+- (void)updateForTrialStarted;
+- (void)updateForTrailsCompleted:(nonnull NSString *)resultsText;
+
 @end

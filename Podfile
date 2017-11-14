@@ -1,8 +1,7 @@
 platform :ios, '9.0'
+inhibit_all_warnings!
 
 target 'SampleApplication' do
-
-  # Pods for SampleApplication
 
   target 'SampleApplicationTests' do
     inherit! :search_paths
